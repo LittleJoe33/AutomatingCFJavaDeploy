@@ -3,6 +3,8 @@ Lines=$(cat $File)
 RPM=$1
 regex='-(([[:digit:]]+)\.([[:digit:]]+)\.([[:digit:]]+)\-([[:digit:]]+))\.'
 
+##git.test
+
 [[ "$RPM" =~ $regex ]]
 
 uversion="${BASH_REMATCH[1]}"
